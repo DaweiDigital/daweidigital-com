@@ -1,0 +1,120 @@
+html {
+    &.responsive-menu-is-show, &.responsive-menu-is-show body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+}
+
+body {
+    font-family: $font-primary;
+    font-size: 16px;
+    font-weight: $regular;
+    margin: 0;
+    color: $color-grey-3;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: $regular; 
+    margin-top: 0;
+}
+
+h1, .h1 {
+    font-size:rem(32);
+    
+    @include bp-xs {
+        font-size: rem(28);
+    }
+}
+
+h2, .h2 {
+    font-size: rem(52);
+    font-weight: $bold;
+    letter-spacing: rem(2);
+    position: relative;
+    padding-bottom: rem(15);
+    margin-bottom: rem(25);
+    text-align: center;
+
+    @include bp-xs {
+        font-size: rem(25);
+    }
+
+    .bs-parallax & {
+        color: $color-white;
+
+        &:after {
+            background-color: $color-white;
+        }
+    }
+}
+
+h3, .h3 {
+    font-size: rem(21);
+    letter-spacing: 1px;
+}
+
+h4, .h4 {
+    font-size: rem(17);
+}
+
+h5, .h5 {
+    font-size: rem(16);
+}
+
+p {
+    line-height: 1.8;
+    font-size: rem(17);
+    font-family: $font-secondary;
+    color: $color-grey-2;
+}
+
+a {
+
+    .no-touch &:hover {
+        text-decoration: none;
+    }
+}
+
+a[href^="tel"],a[href^="mailto"] {
+    text-decoration: none;
+    font-size: rem(16);
+}
+
+a[href^="tel:"] {
+    @include bp-md-high {
+        pointer-events: none;
+    }
+}
+
+a[href^="mailto"] {
+    .no-touch &:hover {
+        text-decoration: underline;
+    }
+}
+
+.ante-headline {
+    font-size: rem(15);
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    font-family: $font-secondary;
+    font-weight: $bold;
+    letter-spacing: 2px;
+
+    &+* {
+        margin-top: rem(34);
+    }
+}
+
+.text-perrex {
+    max-width: rem(800);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-md-left {
+    @include media-breakpoint-up(md) {
+        text-align: left;
+    }
+}

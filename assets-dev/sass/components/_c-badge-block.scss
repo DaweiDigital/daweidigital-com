@@ -1,0 +1,35 @@
+.c-badge-block {
+  list-style: none;
+  padding: 0;
+}
+
+.c-badge-block-el {
+    width: 50%;
+    text-align: center;
+    padding: rem(15);
+
+    @include media-breakpoint-up(sm) {
+      width: 25%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 15%;
+    }
+}
+
+.c-badge-img {
+  padding: rem(30);
+  min-height: rem(140);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.c-badge-heading {
+    margin: 0;
+    font-size: rem(16);
+}

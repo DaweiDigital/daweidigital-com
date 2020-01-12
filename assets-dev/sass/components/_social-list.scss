@@ -1,0 +1,28 @@
+.social-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-list-item {
+    margin: 0 1%;
+}
+
+.social-list-link {
+    text-decoration: none;
+    color: $color-primary;
+    @include vertical-align-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    width: rem(50);
+    height: rem(50);
+    font-size: rem(21);
+    background-color: $color-white;
+    border-radius: 50%;
+    transition: color ease .3s, background-color ease .3s;
+    
+    .no-touch &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+    }       
+}

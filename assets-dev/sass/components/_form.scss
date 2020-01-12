@@ -1,0 +1,245 @@
+.input,
+.textarea,
+.select {
+  float: left;
+  width: 100%;
+  border: rem(1) solid $color-grey-1;
+  padding: rem(15);
+  outline: 0;
+  font-family: $font-secondary;
+  font-weight: $regular;
+  color: $color-black-3;
+  background-color: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 3px;
+  @include transition(border-color ease 0.3s);
+
+  .no-touch &:hover,
+  &:focus {
+    border-color: $color-primary;
+  }
+}
+
+input {
+  &::-webkit-contacts-auto-fill-button {
+    visibility: hidden;
+    display: none !important;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+  }
+}
+
+.textarea {
+  resize: none;
+  height: rem(185);
+}
+
+select {
+  cursor: pointer;
+
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+.select-wrap {
+  background-color: $color-white;
+  position: relative;
+}
+
+.selectbox-icon {
+    position: absolute;
+    top: rem(11);
+    right: rem(15);
+    z-index: -1;
+    font-size: rem(24);
+}
+
+.select {
+  background-color: transparent;
+}
+
+.input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 rem(30) $color-white inset;
+}
+
+.label {
+  padding: 0;
+  margin: 0 0 rem(7);
+  display: block;
+  color: $color-grey-3;
+  font-size: rem(11);
+  font-family: $font-secondary;
+  font-weight: $bold;
+  text-transform: uppercase;
+  transition: color ease 0.3s;
+
+  &.required {
+    &:after {
+      content: "*";
+      display: inline-block;
+      color: $color-red;
+      margin-left: rem(3);
+    }
+  }
+}
+
+.form-web {
+  @include no-float-targets;
+}
+
+.form-group {
+  float: left;
+  width: 100%;
+  position: relative;
+  margin-bottom: rem(22);
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &:focus-within {
+    .label {
+      color: $color-primary;
+    }
+  }
+}
+
+.form-message {
+  padding: rem(15);
+  text-align: center;
+  border: rem(1) solid transparent;
+  margin-top: rem(15);
+  display: none;
+
+  &.success-message {
+    color: $color-green;
+    background-color: $color-green-1;
+    border-color: $color-green-2;
+  }
+
+  &.error-message {
+    color: $color-red-1;
+    background-color: $color-red-2;
+    border-color: $color-red-3;
+  }
+}
+
+@keyframes click-wave {
+  0% {
+    height: 25px;
+    width: 25px;
+    opacity: 0.35;
+    position: relative;
+  }
+
+  100% {
+    height: 100px;
+    width: 100px;
+    margin-left: -40px;
+    margin-top: -40px;
+    opacity: 0;
+  }
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  height: rem(25);
+  width: rem(25);
+  transition: all 0.15s ease-out 0s;
+  background-color: $color-white;
+  border: none;
+  color: $color-white;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  outline: none;
+  position: absolute;
+  left: 0;
+  z-index: 10;
+  padding: 0;
+  top: rem(-2);
+  border: rem(1) solid $color-grey-1;
+
+  &:hover {
+    background-color: $color-primary;
+  }
+
+  &:checked {
+    background-color: $color-primary;
+    border-color: $color-primary;
+
+    &:before {
+      height: rem(25);
+      width: rem(25);
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "✔";
+      display: inline-block;
+      font-size: rem(20);
+      text-align: center;
+      line-height: 25px;
+    }
+
+    &:after {
+      -webkit-animation: click-wave 0.65s;
+      -moz-animation: click-wave 0.65s;
+      animation: click-wave 0.65s;
+      background-color: $color-primary;
+      content: "";
+      display: block;
+      position: relative;
+      z-index: 100;
+    }
+  }
+}
+
+.option-input.radio {
+  border-radius: 50%;
+}
+
+.option-input.radio::after {
+  border-radius: 50%;
+}
+
+label {
+  text-align: left;
+
+  a {
+    color: $color-white;
+
+    &:hover {
+      text-decoration: none;
+      color: $color-primary;
+    }
+  }
+}
+
+.checkbox-label {
+  position: relative;
+  padding-left: rem(43);
+  padding-top: rem(4);
+  cursor: pointer;
+}
+
+.checkbox-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.checkbox-el {
+  width: 100%;
+  margin: rem(12) 0;
+
+  @include media-breakpoint-up(md) {
+    width: 50%;
+  }
+}

@@ -1,0 +1,4 @@
+@include keyframes(mouseMove) {
+    0% { bottom: rem(50); }
+    50% { bottom: rem(30); }
+}

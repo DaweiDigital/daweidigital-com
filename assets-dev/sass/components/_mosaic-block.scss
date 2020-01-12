@@ -1,0 +1,87 @@
+.mosaic-block {
+  list-style: none;
+  padding: 0;
+
+  @include no-float-targets;
+}
+
+.mosaic-block-el {
+  width: 25%;
+  position: relative;
+  height: 0;
+  padding-bottom: 25%;
+  float: left;
+  text-align: center;
+
+  @include media-breakpoint-down(sm) {
+    width: 50%;
+    padding-bottom: 50%;
+  }
+
+  &:first-child {
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+      width: 50%;
+      padding-bottom: 50%;
+    }
+
+    .mosaic-block-text {
+      font-size: rem(108);
+      line-height: 90px;
+
+      @include media-breakpoint-up(md) {
+        font-size: rem(350);
+        line-height: 275px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        font-size: rem(380);
+        line-height: 355px;
+      }
+    }
+
+    .mosaic-block-title {
+      @include media-breakpoint-up(md) {
+        font-size: rem(20);
+      }
+
+      @include media-breakpoint-up(lg) {
+        font-size: rem(25);
+      }
+    }
+  }
+}
+
+.mosaic-block-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mosaic-block-title {
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-size: rem(13);
+  font-weight: $bold;
+  font-family: $font-secondary;
+
+  @include media-breakpoint-up(lg) {
+    white-space: nowrap;
+    font-size: rem(15);
+  }
+}
+
+.mosaic-block-text {
+  font-size: rem(80);
+  margin: 0;
+
+  @include media-breakpoint-down(sm) {
+    font-size: rem(50);
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: rem(108);
+  }
+}

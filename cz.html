@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="cs-CZ" class="no-touch js-disable">
+
+<head>
+    <title>Dawei Digital | Front-End & WordPress Developer</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Vyvíjím a navrhuji webové stránky na míru. Moje flexibilita, chuť k inovaci a vrozená kreativita zajišťuje mým klientům ten nejlepší výstup.">
+    <meta name="keywords"
+        content="frontend, developer, frontend developer, fron-tend developer, html, css, jquery, wordpress, grunt, sass">
+    <link rel="alternate" href="https://www.daweidigital.com" hreflang="cs-cz" />
+    <link rel="canonical" href="https://www.daweidigital.com" />
+    <meta property="og:locale" content="cs_CZ" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dawei Digital | Front-End Developer" />
+    <meta property="og:description"
+        content="Vyvíjím a navrhuji webové stránky na míru. Moje flexibilita, chuť k inovaci a vrozená kreativita zajišťuje mým klientům ten nejlepší výstup." />
+    <meta property="og:url" content="https://www.daweidigital.com" />
+    <meta property="og:site_name" content="daweidigital.cz" />
+    <meta property="og:image" content="https://www.daweidigital.com/user-data/david-adam-og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description"
+        content="Vyvíjím a navrhuji webové stránky na míru. Moje flexibilita, chuť k inovaci a vrozená kreativita zajišťuje mým klientům ten nejlepší výstup." />
+    <meta name="twitter:title" content="Dawei Digital | Front-End developer" />
+    <meta name="twitter:site" content="@cryptopediacz" />
+    <meta name="twitter:image" content="https://www.daweidigital.com/user-data/david-adam-og-image.jpg" />
+    <meta name="twitter:creator" content="@cryptopediacz" />
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="assets/css/style.min.css" type="text/css" media="screen" />
+    <script type="text/javascript">
+        document.getElementsByTagName("html")[0].className = document.getElementsByTagName("html")[0].className.replace(/\bjs-disable\b/, '');
+        document.getElementsByTagName('html')[0].className += 'js-on-air';
+        WebFontConfig = {
+            google: {
+                families: ['Notino Sans:400,700,900:latin-ext', 'Roboto Slab:300,400,700:latin-ext']
+            }
+        };
+        (function (d) {
+            var wf = document.createElement('script');
+            wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })(document);
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43665098-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-43665098-5');
+    </script>
+</head>
+
+<body>
+    <header class="website-header hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-7 col-sm-5 col-md-4">
+                    <div class="website-logo">
+                        <a href="#" class="website-logo-link" rel="home" itemprop="url">
+                            Dawei Digital
+                        </a>
+                    </div>
+                </div>
+                <div class="col-5 col-sm-7 col-md-8">
+                    <nav class="site-primary-navigation" itemscope="itemscope"
+                        itemtype="http://schema.org/SiteNavigationElement">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle">
+                                <span class="sr-only">Menu</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="navbar-responsive">
+                            <span class="close-navi js-close"></span>
+                            <div class="navbar-container">
+                                <ul class="navbar">
+                                    <li class="navbar-item">
+                                        <a href="#sluzby" class="navbar-link">
+                                            Služby
+                                        </a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="#o-mne" class="navbar-link">
+                                            O mně
+                                        </a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="#reference" class="navbar-link">
+                                            Referece
+                                        </a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="#kontakt" class="navbar-link">
+                                            Kontakt
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="language-menu">
+                                <li class="language-menu-item active">
+                                    <a href="javascript:void(0)" class="language-menu-link">CZ</a>
+                                </li>
+                                <li class="language-menu-item">
+                                    <a href="/index.html" class="language-menu-link">EN</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main role="main" itemscope itemtype="http://schema.org/Person">
+        <div class="bs-block main-banner full-screen-preview">
+            <div id="particles-js" class="canvas-background"></div>
+            <div class="main-banner-content">
+                <section class="container text-center">
+                    <span class="salutation">Vývoj & návrh webových stránek</span>
+                    <h1 itemprop="name">Dawei Digital</h1>
+                    <h2 itemprop="jobTitle">Front End & Wordpress <br /> Developer</h2>
+                </section>
+            </div>
+            <a href="#sluzby" class="mouse">
+                Dolů
+            </a>
+        </div>
+        <div class="bs-block" id="sluzby">
+            <section class="container">
+                <span class="ante-headline">Služby</span>
+                <h2>Custom Website Developemnt</h2>
+                <h4 class="text-center h3 text-perrex">
+                    Základ každého úspěchu je analýza, od které se vyvíjí kvalitní UX Design, nakóduji a nasadím vaše
+                    webové
+                    stránky na redakční systém či ponechám v HTML formě.
+                </h4>
+                <ul class="services-list d-flex flex-wrap mt-5 pt-3">
+                    <li class="sl-item">
+                        <i class="fal fa-phone-laptop sl-icon"></i>
+                        <h3 class="sl-title">Front End Development</h3>
+                        <p class="sl-text">Vaší vizuální část nasadím na redakční systém nebo pouze HTML.</p>
+                    </li>
+                    <li class="sl-item">
+                        <i class="fal fa-pencil-ruler sl-icon"></i>
+                        <h3 class="sl-title">UX Design</h3>
+                        <p class="sl-text">Logické a cílené navržení webových stránek je absolutní základ každé úspéšné
+                            webové stránky.</p>
+                    </li>
+                    <li class="sl-item">
+                        <i class="fal fa-eye sl-icon"></i>
+                        <h3 class="sl-title">Technická analýza</h3>
+                        <p class="sl-text">Otestuji vám webové stránky ve všech aktuálních prohlížech a systémech.</p>
+                    </li>
+                    <li class="sl-item">
+                        <i class="fab fa-wordpress-simple sl-icon"></i>
+                        <h3 class="sl-title">WordPress</h3>
+                        <p class="sl-text">Nasadím a upravím již hotové šablony nebo vám ji vytvořím na zakázku.
+                        </p>
+                    </li>
+                </ul>
+                <div class="text-center mt-5">
+                    <a href="#reference" class="btn btn-ghost">Zjistit více</a>
+                </div>
+            </section>
+        </div>
+        <div class="bs-block pb-0" id="o-mne">
+            <section class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <span class="ante-headline text-md-left">Dawei Digital</span>
+                        <h2 class="text-md-left">David Adam</h2>
+                        <p>
+                            Dawei Digital představuje <strong>design a vývoj webových stránek</strong>. Je to značka, za kterou stojí zkušený a šikovný web developer <br/><b>David Adam</b>.
+                        </p>
+                        <p>
+                            Vím, jak je težké dnes sehnat <strong>kvalitní vyvojáře</strong>, kteří dodržují termíny,
+                            mají odpovidajcí cenu za provedenou práci. Tyhle hlavní důvodu mě vedli k <strong>založení Dawei
+                                Digital</strong> a přivést na trh to co tu chybí.
+                        </p>
+                        <p>
+                            Pamatujte že, vaše webové stránky nejsou jen pár řádků kódu, je to vaše prezentace a hlavně prodejní kanál
+                            - Vaše <strong>digitální vizitka</strong>.
+                        </p>
+                    </div>
+                    <div class="col-lg-7 mt-3 mt-md-0">
+                        <img src="./img/lazyload.png" data-original="./user-data/david-adam.jpg" alt="David Adam"
+                            class="lazy-load mw-100 d-block">
+                        <noscript><img src="./user-data/david-adam.jpg" alt="David Adam"
+                                class="mw-100 d-block"></noscript>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="bs-block bs-parallax bg-image-cooperation lazy-bg">
+            <section class="container">
+                <span class="ante-headline">Start</span>
+                <h2>Máte zájem o spolupráci?</h2>
+                <div class="text-center mt-5">
+                    <a href="#kontakt" class="btn btn-ghost">Domluvte si konzultaci zdarma</a>
+                </div>
+            </section>
+        </div>
+        <div class="bs-block">
+            <section class="container">
+                <span class="ante-headline">Technologie</span>
+                <h2>Flexibilní v inovacích</h2>
+                <h4 class="text-center h3 text-perrex">Technologie dnes tvoří svět. Bez jejich inovací, jakoby se
+                    zastavil čas. Využívám ty nejaktuálnější, aby akcelerovali vaše webové stránky. Bez dobrého základu
+                    není dobrý výstup.</h4>
+                <ul class="d-flex justify-content-center align-items-center flex-wrap c-badge-block">
+                    <li class="c-badge-block-el o-square">
+                        <div class="c-badge-img">
+                            <img data-original="./user-data/technologies/css3-logo-icon-vector.svg"
+                                src="./img/lazyload.png" alt="CSS3" class="lazy-load">
+                        </div>
+                        <h3 class="c-badge-heading">CSS3</h3>
+                    </li>
+                    <li class="c-badge-block-el o-square">
+                        <div class="c-badge-img">
+                            <img data-original="./user-data/technologies/HTML5-Logo.png" src="./img/lazyload.png"
+                                alt="HTML5" class="lazy-load">
+                        </div>
+                        <h3 class="c-badge-heading">HTML5</h3>
+                    </li>
+                    <li class="c-badge-block-el o-square">
+                        <div class="c-badge-img">
+                            <img data-original="./user-data/technologies/bootstrap.svg" src="./img/lazyload.png"
+                                alt="Bootstrap" class="lazy-load">
+                        </div>
+                        <h3 class="c-badge-heading">Bootstrap</h3>
+                    </li>
+                    <li class="c-badge-block-el o-square">
+                        <div class="c-badge-img">
+                            <img data-original="./user-data/technologies/jquery-icon-6.jpg" src="./img/lazyload.png"
+                                alt="jQuery" class="lazy-load">
+                        </div>
+                        <h3 class="c-badge-heading">jQuery</h3>
+                    </li>
+                    <li class="c-badge-block-el o-square">
+                        <div class="c-badge-img">
+                            <img data-original="./user-data/technologies/MySQL.svg" src="./img/lazyload.png" alt="MySQL"
+                                class="lazy-load">
+                        </div>
+                        <h3 class="c-badge-heading">MySQL</h3>
+                    </li>
+                    <li class="c-badge-block-el o-square">
+                        <div class="c-badge-img">
+                            <img data-original="./user-data/technologies/wordpress.svg" src="./img/lazyload.png"
+                                alt="WordPress" class="lazy-load">
+                        </div>
+                        <h3 class="c-badge-heading">WordPress</h3>
+                    </li>
+                    <li class="c-badge-block-el o-square">
+                        <div class="c-badge-img">
+                            <img data-original="./user-data/technologies/Adobe_Photoshop_CC_icon.svg"
+                                src="./img/lazyload.png" alt="Adobe Photoshop" class="lazy-load">
+                        </div>
+                        <h3 class="c-badge-heading">Adobe Photoshop</h3>
+                    </li>
+                    <li class="c-badge-block-el o-square">
+                        <div class="c-badge-img">
+                            <img data-original="./user-data/technologies/axure-rp.jpg" src="./img/lazyload.png"
+                                alt="Axure RP" class="lazy-load">
+                        </div>
+                        <h3 class="c-badge-heading">Axure RP</h3>
+                    </li>
+                    <li class="c-badge-block-el o-square">
+                        <div class="c-badge-img">
+                            <img data-original="./user-data/technologies/node-js-logo.png" src="./img/lazyload.png"
+                                alt="Node.js" class="lazy-load">
+                        </div>
+                        <h3 class="c-badge-heading">Node.js</h3>
+                    </li>
+                    <li class="c-badge-block-el o-square">
+                        <div class="c-badge-img">
+                            <img data-original="./user-data/technologies/logo-b6e1ef6e.svg" src="./img/lazyload.png"
+                                alt="SASS" class="lazy-load">
+                        </div>
+                        <h3 class="c-badge-heading">SASS</h3>
+                    </li>
+                    <li class="c-badge-block-el o-square">
+                        <div class="c-badge-img">
+                            <img data-original="./user-data/technologies/less-logo.png" src="./img/lazyload.png"
+                                alt="LESS" class="lazy-load">
+                        </div>
+                        <h3 class="c-badge-heading">LESS</h3>
+                    </li>
+                    <li class="c-badge-block-el o-square">
+                        <div class="c-badge-img">
+                            <img data-original="./user-data/technologies/fontawesome.png" src="./img/lazyload.png"
+                                alt="Font Awesome" class="lazy-load">
+                        </div>
+                        <h3 class="c-badge-heading">Font Awesome</h3>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="bs-block bg-primary overflow-content">
+            <section class="container-fluid">
+                <span class="ante-headline">V číslech</span>
+                <h2>60+ Úspěšných projektů</h2>
+                <h4 class="text-center h3 text-perrex">
+                    1000 praktikovaných hodin z vás dělá mistra v tom co děláte. Svojí profesionalitu i přesto v Dawei
+                    Digital stále vyvíjíme a inovujeme. Jsme přesvědčeni, že růst a inovace jsou jediným řešením jak
+                    našim klientům poskytnout tu nejlepší péči.
+                </h4>
+                <ul class="mosaic-block overflow-el">
+                    <li class="mosaic-block-el bg-primary">
+                        <div class="mosaic-block-content">
+                            <h3 class="mosaic-block-title">Let v oboru</h3>
+                            <h5 class="mosaic-block-text">7</h5>
+                        </div>
+                    </li>
+                    <li class="mosaic-block-el bg-secondary">
+                        <div class="mosaic-block-content">
+                            <h3 class="mosaic-block-title">Spokojených klientů</h3>
+                            <h5 class="mosaic-block-text">40</h5>
+                        </div>
+                    </li>
+                    <li class="mosaic-block-el bg-third">
+                        <div class="mosaic-block-content">
+                            <h3 class="mosaic-block-title">Mluvených jazyků</h3>
+                            <h5 class="mosaic-block-text">3</h5>
+                        </div>
+                    </li>
+                    <li class="mosaic-block-el bg-fourth">
+                        <div class="mosaic-block-content">
+                            <h3 class="mosaic-block-title">Dokončených projektů</h3>
+                            <h5 class="mosaic-block-text">100</h5>
+                        </div>
+                    </li>
+                    <li class="mosaic-block-el bg-fifth">
+                        <div class="mosaic-block-content">
+                            <h3 class="mosaic-block-title">Provozní doba denně</h3>
+                            <h5 class="mosaic-block-text">10</h5>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="bs-block">
+            <section class="container">
+                <h2>Významné spolupráce</h2>
+                <ul class="d-flex flex-wrap justify-content-center align-items-center logo-list">
+                    <li class="logo-list-el">
+                        <img data-original="./user-data/clients/harley-davidson-logo.png" src="./img/lazyload.png"
+                            alt="Harley Davidson" class="lazy-load">
+                    </li>
+                    <li class="logo-list-el">
+                        <img data-original="./user-data/clients/Hyundai-Logo.png" src="./img/lazyload.png" alt="Hyundai"
+                            class="lazy-load">
+                    </li>
+                    <li class="logo-list-el">
+                        <img data-original="./user-data/clients/logo-heureka.svg" src="./img/lazyload.png" alt="Heureka"
+                            class="lazy-load">
+                    </li>
+                    <li class="logo-list-el">
+                        <img data-original="./user-data/clients/Ceska_Sporitelna-logo.svg" src="./img/lazyload.png"
+                            alt="Česká Spořitelna" class="lazy-load">
+                    </li>
+                    <li class="logo-list-el">
+                        <img data-original="./user-data/clients/csob-2692-cmss-logo.png" src="./img/lazyload.png"
+                            alt="ČMSS" class="lazy-load">
+                    </li>
+                    <li class="logo-list-el">
+                        <img data-original="./user-data/clients/blazek-glass-logo.jpg" src="./img/lazyload.png"
+                            alt="Blažek Glass" class="lazy-load">
+                    </li>
+                    <li class="logo-list-el">
+                        <img data-original="./user-data/clients/mluvii-logo.png" src="./img/lazyload.png"
+                            alt="Mluvii.cz" class="lazy-load">
+                    </li>
+                    <li class="logo-list-el">
+                        <img data-original="./user-data/clients/zavezu-logo.png" src="./img/lazyload.png"
+                            alt="Zavezu.cz" class="lazy-load">
+                    </li>
+                    <li class="logo-list-el">
+                        <img data-original="./user-data/clients/fiverr-logo.png" src="./img/lazyload.png" alt="Fiverr"
+                            class="lazy-load">
+                    </li>
+                    <li class="logo-list-el">
+                        <img data-original="./user-data/clients/marketing-miner-logo.png" src="./img/lazyload.png"
+                            alt="Marketing Miner" class="lazy-load">
+                    </li>
+                    <li class="logo-list-el">
+                        <img data-original="./user-data/clients/hnuti-ano-logo.jpg" src="./img/lazyload.png"
+                            alt="Ano - Politické hnutí" class="lazy-load">
+                    </li>
+                    <li class="logo-list-el">
+                        <img data-original="./user-data/clients/osmickaprorodinu.png" src="./img/lazyload.png"
+                            alt="Osmička pro rodinu" class="lazy-load">
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="bs-block bg-secondary overflow-content" id="reference">
+            <section class="container-fluid">
+                <span class="ante-headline">Portfolio</span>
+                <h2>Multi vývojové umění</h2>
+                <h4 class="text-center h3 text-perrex">
+                    Hotová práce mluví za vše. Zde se můžete pokochat našemi referecemi a zjistit co od nás můžete
+                    očekávat. Držíme se tří klíčových slov - Kvalita, odpovědnost a transparentnost.
+                </h4>
+                <ul class="reference-list overflow-el d-flex flex-wrap">
+                    <li class="reference-list-item bg-primary">
+                        <div class="reference-thumb">
+                            <img data-original="./user-data/reference/pepinos-restaurant-de.png"
+                                src="./img/lazyload.png" alt="Pepinos Restaurant" class="lazy-load">
+                            <noscript><img src="./user-data/reference/pepinos-restaurant-de.png"
+                                    alt="Pepinos Restaurant"></noscript>
+                        </div>
+                        <div class="reference-content">
+                            <h3>Pepinos Restaurant</h3>
+                            <span class="subtitle">Wordpress</span>
+                            <span class="reference-list-button">Zobrazit živou referenci<i
+                                    class="fal fa-arrow-circle-right"></i></span>
+                        </div>
+                        <a href="http://www.pepinos-pizza.eu/" target="_blank" rel="external"
+                            class="reference-list-link">Odkaz</a>
+                    </li>
+                    <li class="reference-list-item bg-third">
+                        <div class="reference-thumb">
+                            <img data-original="./img/reference/zavezu-reference.png" src="./img/lazyload.png"
+                                alt="Zavezu.cz" class="lazy-load">
+                            <noscript><img src="./img/reference/zavezu-reference.png" alt="Zavezu.cz"></noscript>
+                        </div>
+                        <div class="reference-content">
+                            <h3>Zavezu.cz</h3>
+                            <span class="subtitle">AngularJS</span>
+                            <span class="reference-list-button">Zobrazit živou referenci<i
+                                    class="fal fa-arrow-circle-right"></i></span>
+                        </div>
+                        <a href="https://www.zavezu.cz/www/zasilky/#!/list/waiting/createdAt" target="_blank"
+                            rel="external" class="reference-list-link">Odkaz</a>
+                    </li>
+                    <li class="reference-list-item bg-fifth">
+                        <div class="reference-thumb">
+                            <img data-original="./img/reference/heureka-reference.png" src="./img/lazyload.png"
+                                alt="Heureka" class="lazy-load">
+                            <noscript><img src="./img/reference/heureka-reference.png" alt="Heureka"></noscript>
+                        </div>
+                        <div class="reference-content">
+                            <h3>Heureka</h3>
+                            <span class="subtitle">Custom CMS</span>
+                            <span class="reference-list-button">Zobrazit živou referenci<i
+                                    class="fal fa-arrow-circle-right"></i></span>
+                        </div>
+                        <a href="https://certifikace.heureka.cz/" target="_blank" rel="external"
+                            class="reference-list-link">Odkaz</a>
+                    </li>
+                    <li class="reference-list-item bg-fourth">
+                        <div class="reference-thumb">
+                            <img data-original="./img/reference/ceska-sporitelna-reference.png" src="./img/lazyload.png"
+                                alt="Česká Spořitelna" class="lazy-load">
+                            <noscript><img src="./img/reference/ceska-sporitelna-reference.png"
+                                    alt="Česká Spořitelna"></noscript>
+                        </div>
+                        <div class="reference-content">
+                            <h3>Česká Spořitelna</h3>
+                            <span class="subtitle">AgnularJS</span>
+                            <span class="reference-list-button">Zobrazit živou referenci<i
+                                    class="fal fa-arrow-circle-right"></i></span>
+                        </div>
+                        <a href="https://www.pujckabezpapiru.cz/nel" target="_blank" rel="external"
+                            class="reference-list-link">Odkaz</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="bs-block" id="kontakt">
+            <section class="container">
+                <h2>Kontakt</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-11 col-lg-8">
+                        <div class="form">
+                            <form class="form-web" role="form" method="post" id="contact_form">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="label required" for="vase_jmeno">Jméno</label>
+                                            <input type="text" class="input js-form-control" id="vase_jmeno"
+                                                name="vase_jmeno" required tabindex="1">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-4 mt-md-0">
+                                        <div class="form-group">
+                                            <label class="label required" for="vase_prijmeni">Příjmení</label>
+                                            <input type="text" class="input js-form-control" id="vase_prijmeni"
+                                                name="vase_prijmeni" required tabindex="2">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="label required" for="email">E-mail</label>
+                                            <input type="email" class="input js-form-control" id="email" name="email"
+                                                required tabindex="3">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-4 mt-md-0">
+                                        <div class="form-group">
+                                            <label class="label required" for="telefon">Telefon</label>
+                                            <input type="number" class="input js-form-control" id="telefon"
+                                                name="telefon" required tabindex="5">
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="label required" for="type_company">Typ společnosti</label>
+                                    <div class="select-wrap">
+                                        <select class="select js-form-control" id="type_company" name="type_company">
+                                            <option value="" selected disabled>Vyberte typ společnosti</option>
+                                            <option value="Start up - Early Stage">Start up - Early Stage
+                                            </option>
+                                            <option value="Start up - Late Stage">Start up - Late Stage</option>
+                                            <option value="Small or medium-sized business">Small or medium-sized
+                                                business</option>
+                                            <option value="Entreprise">Entreprise</option>
+                                            <option value="Non-Profit">Non-Profit</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                        <i class="fal fa-angle-down selectbox-icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4 mt-md-0">
+                                <div class="form-group">
+                                    <label class="label required" for="nazev_spolecnosti">Název
+                                        společnosti</label>
+                                    <input type="text" class="input js-form-control" id="nazev_spolecnosti"
+                                        name="nazev_spolecnosti" required tabindex="6">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                        <div class="col-12">
+                            <div class="form-group mt-4">
+                                <span class="label required">O co máte zájem?</span>
+                                <ul class="d-flex flex-wrap checkbox-list" role="checkbox">
+                                    <li class="checkbox-el">
+                                        <label class="checkbox-label">
+                                            <input class="checkbox" type="checkbox" name="consulting" id="consulting">
+                                            <span class="checkbox-text">Konzultace</span>
+                                        </label>
+                                    </li>
+                                    <li class="checkbox-el">
+                                        <label class="checkbox-label">
+                                            <input class="checkbox" type="checkbox" name="ux_design" id="ux_design">
+                                            <span class="checkbox-text">UI/UX Design</span>
+                                        </label>
+                                    </li>
+                                    <li class="checkbox-el">
+                                        <label class="checkbox-label">
+                                            <input class="checkbox" type="checkbox" name="frontend" id="frontend">
+                                            <span class="checkbox-text">Front End Development</span>
+                                        </label>
+                                    </li>
+                                    <li class="checkbox-el">
+                                        <label class="checkbox-label">
+                                            <input class="checkbox" type="checkbox" name="wordpress" id="wordpress">
+                                            <span class="checkbox-text">WordPress</span>
+                                        </label>
+                                    </li>
+                                    <li class="checkbox-el">
+                                        <label class="checkbox-label">
+                                            <input class="checkbox" type="checkbox" name="custom_website_development"
+                                                id="custom_website_development">
+                                            <span class="checkbox-text">Vývoj webových stránek na míru</span>
+                                        </label>
+                                    </li>
+                                    <li class="checkbox-el">
+                                        <label class="checkbox-label">
+                                            <input class="checkbox" type="checkbox" name="quality_insurance"
+                                                id="quality_insurance">
+                                            <span class="checkbox-text">Technická analyza</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="form-group">
+                                <label class="label required" for="zprava">Zpráva</label>
+                                <textarea class="textarea js-form-control" name="zprava" id="zprava"
+                                    required></textarea>
+                            </div>
+                            <div class="form-group text-center">
+                                <label class="checkbox-label d-inline-block">
+                                    <input class="checkbox" type="checkbox" name="gdpr" id="gdpr" required>
+                                    <span class="checkbox-text d-inline-block">Souhlasím se zpracováním
+                                        osobních údaju
+                                        podle GDPR</span>
+                                </label>
+                            </div>
+                            <div class="form-group text-center">
+                                <button type="submit" class="btn btn-primary">Odeslat</button>
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                    <div id="success_message" class="form-message success-message" role="alert">
+                        Formulář byl úspěšně odeslán. Budu vás konaktovat co nejdříve. S pozdravem David Adam
+                    </div>
+                    <div id="error_message" class="form-message error-message" role="alert">
+                        Nastala neočekávaná chyba při odeslání formuláře. Prosím zkuste formulář odeslat později
+                        nebo mě
+                        kontaktovat na hello@daweidigital.com. Děkuji za pochopení.
+                    </div>
+                </div>
+        </div>
+        </div>
+        </section>
+        <section class="container">
+            <div class="row mt-5 pt-5 pb-5">
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-box icon-yes">
+                        <i class="far fa-envelope text-box-icon"></i>
+                        <h3>E-mail</h3>
+                        <p><a href="mailto:hello@daweidigital.com" itemprop="email">hello@daweidigital.com</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-5 mt-md-0 col-lg-3">
+                    <div class="text-box icon-yes">
+                        <i class="far fa-map-marker-smile text-box-icon"></i>
+                        <h3>Online</h3>
+                        <p><a href="https://www.fiverr.com/mrdavidadam" target="_blank">Fiverr</a> or <a href="https://www.linkedin.com/in/mr-david-adam/" target="_blank">LinkedIn</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-5 mt-lg-0 col-lg-3">
+                    <div class="text-box icon-yes">
+                        <i class="fab fa-facebook-f text-box-icon"></i>
+                        <h3>Facebook</h3>
+                        <p>Můžete mě také kontakovat na <a href="https://www.facebook.com/Dawei-Digital-573053686550930"
+                                target="blank" rel="external">facebooku</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-5 mt-lg-0 col-lg-3">
+                    <div class="text-box icon-yes">
+                        <i class="fas fa-university text-box-icon"></i>
+                        <h3>Fakturace</h3>
+                        <p>IČ: 06702309</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+    </main>
+    <footer class="website-footer top-gap-medium">
+        <div class="container text-center">
+            <span class="footer-title">Můžete mě najít na</span>
+            <ul class="social-list d-flex flex-wrap justify-content-center align-items-center mt-5 mb-5">
+                <li class="social-list-item">
+                    <a href="https://www.linkedin.com/in/davidadamcz/" target="_blank" rel="external"
+                        class="social-list-link linkedin-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li class="social-list-item">
+                    <a href="https://www.instagram.com/daweidigital/" target="_blank" rel="external"
+                        class="social-list-link twitter-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="social-list-item">
+                    <a href="https://www.facebook.com/Dawei-Digital-573053686550930" target="_blank" rel="external"
+                        class="social-list-link cryptopedia-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="footer-conditions text-center">
+                <div class="website-conditions">
+                    &copy; 2019 daweidigital.com. Všechna práva vyhrazena.
+                </div>
+                <address class="website-developers mt-3 mt-md-0">
+                    <a href="http://www.daweidigital.com" target="_blank" rel="external" itemprop="url">
+                        With <i class="fas fa-heart"></i> David Adam
+                    </a>
+                </address>
+            </div>
+        </div>
+    </footer>
+    <div class="cookie-message">
+        <div class='container'>
+            <div class='row text-center-xs'>
+                <div class='col-md-9'>Pokračováním procházení našich stránek souhlasíte s Pravidly
+                    pro souhlas s používáním souborů cookie a používáním technologie cookies <a
+                        href="https://www.google.com/policies/technologies/cookies/" target="_blank">více informací</a>
+                </div>
+                <div class='col-md-3 text-md-right text-center'><button
+                        class="btn btn-ghost color-white js-close-button" type='button'>Souhlasím</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay js-overlay"></div>
+    <script type="text/javascript" src="assets/js/jquery-2.1.0.min.js"></script>
+    <script type='text/javascript' src="assets/js/main.min.js"></script>
+</body>
+
+</html>

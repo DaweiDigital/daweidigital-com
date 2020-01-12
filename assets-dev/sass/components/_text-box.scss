@@ -1,0 +1,45 @@
+.text-box {
+    text-align: center;
+    padding: rem(20) rem(5);
+    border: rem(1) solid $color-primary;
+
+    &.icon-yes {
+        position: relative;
+        padding-top: rem(50);
+        margin-top: rem(40);
+        min-height: rem(157);
+    }
+
+    .text-box-icon {
+        width: rem(80);
+        height: rem(80);
+        color: $color-white;
+        font-size: rem(40);
+        background-color: $color-primary;
+        top: rem(-40);
+        @include border-radius(100%);
+        @include vertical-align-flex;
+        @include horizontal-center-align-transform;
+    }
+
+    h3, .h3 {
+        font-size: rem(24);
+        font-family: $font-secondary;
+        font-weight: $bold;
+        color: $color-primary;
+        letter-spacing: rem(1.5);
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+
+    p {
+        font-size: rem(14);
+        letter-spacing: rem(1.5);
+        margin: rem(3) 0;
+
+        a {
+            font-size: rem(14);
+            color: $color-primary;
+        }
+    }
+}

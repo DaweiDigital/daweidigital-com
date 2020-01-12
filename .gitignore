@@ -1,0 +1,9 @@
+# node modules
+assets-dev/node_modules
+
+# Content
+img/images/*
+img/reference/*
+
+# Plugins
+plugins/*

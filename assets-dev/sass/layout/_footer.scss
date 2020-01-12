@@ -1,0 +1,60 @@
+.website-footer {
+    background-color: $color-third;
+    float: left;
+    width: 100%;
+}
+
+.footer-title {
+    background-color: $color-white;
+    display: inline-block;
+    position: relative;
+    padding: rem(10) rem(20);
+    border-radius: 0 0 rem(10) rem(10);
+    font-weight: $bold;
+    font-size: rem(14);
+    font-family: $font-secondary;
+    text-transform: uppercase;
+
+    &:before, &:after {
+        position: absolute;
+        content: "";
+        border-top: rem(10) solid transparent;
+        top: rem(-10);
+    }
+
+    &:before {
+        border-right: rem(10) solid #ffbaba;
+        left: rem(-10);
+    }
+
+    &:after {
+        border-left: rem(10) solid #ffbaba;
+        right: rem(-10);   
+    }
+}
+
+.footer-conditions {
+    border-top: rem(1) solid $color-white;
+    padding: rem(20) 0;
+    color: $color-white;
+    font-size: rem(14);
+}
+
+.website-conditions {
+    display: inline-block;
+}
+
+.website-developers {
+    display: inline-block;
+    font-style: normal;
+    
+    a {
+        color: $color-white;
+        text-decoration: underline;
+
+        i {
+            margin: 0 rem(2); 
+        }
+    }
+}
+

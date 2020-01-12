@@ -1,0 +1,36 @@
+.scroll-top {
+    position: fixed;
+    z-index: 800;
+    bottom: rem(20);
+    right: rem(20);
+    width: rem(50);
+    height: rem(50);
+    border: rem(2) solid $color-grey;
+    cursor: pointer;
+    background: $color-black-6;
+    text-decoration: none;
+    font-size: 0;
+    @include vertical-align-flex;
+    @include transform-translateY(150%);
+    @include opacity(.7);
+    @include transition(all ease .3s);
+
+    &:after {
+        content:"";
+        width: rem(12);
+        height: rem(12);
+        border: rem(1) solid $color-white;
+        border-bottom: none;
+        border-right: none;
+        display: inline-block;
+        @include transform-rotate(45deg);
+    }
+
+    .no-touch &:hover {
+        @include opacity(1);
+    }
+
+    &.show-it {
+        @include transform-translateY(0);
+    }
+}

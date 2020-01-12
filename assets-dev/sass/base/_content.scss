@@ -1,0 +1,52 @@
+main {
+   @include no-float-targets;
+}
+
+.image-box {
+    width: rem(250);
+    height: rem(250);
+    @include border-radius(50%);
+    overflow: hidden;
+    position: relative;
+    @include display-block-center;
+    
+    img {
+        @include center-align-transform;
+        max-width: 100%;
+    }
+}
+
+.bg-primary {
+    background-color: $color-primary;
+    color: $color-white;
+}
+
+.bg-secondary {
+    background-color: $color-secondary;
+    color: $color-white;
+}
+
+.bg-third {
+    background-color: $color-third;
+    color: $color-white;
+}
+
+.bg-fourth {
+    background-color: $color-fourth;
+    color: $color-white;
+}
+
+.bg-fifth {
+    background-color: $color-fifth;
+    color: $color-white;
+}
+
+.overflow-content {
+    margin-bottom: rem(150);
+}
+
+.overflow-el {
+    position: relative;
+    top: rem(150);
+    margin-top: rem(-90);
+}

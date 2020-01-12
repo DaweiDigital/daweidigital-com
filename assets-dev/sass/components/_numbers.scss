@@ -1,0 +1,33 @@
+.numbers-row {
+    color: $color-white;
+    margin-top: rem(60);
+
+    .iconset {
+        font-size: rem(64);
+        display: block;
+    }
+
+    .number {
+        font-size: rem(72);
+        display: block;
+        letter-spacing: rem(1.2);
+        font-weight: $light;
+        margin-bottom: rem(7);
+        
+        @include bp-sm {
+            font-size: rem(56);
+        }
+        
+        &.icon-plus {
+            &:after {
+                content:"+";
+                margin-left: rem(2);
+            }
+        }
+    }
+
+    .number-title {
+        font-size: rem(14);
+        display: block;
+    }
+}

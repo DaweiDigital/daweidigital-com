@@ -1,0 +1,83 @@
+.btn {
+  outline: 0;
+  display: inline-block;
+  padding: rem(15) rem(30);
+  border: rem(1) solid transparent;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: $font-secondary;
+  font-weight: $heavy;
+  text-decoration: none;
+  font-size: rem(13);
+  border-radius: 25px;
+  color: $color-white;
+  cursor: pointer;
+  @include transition(color ease 0.3s, background-color ease 0.3s, border-color ease 0.3s);
+}
+
+.btn-primary {
+  background-color: $color-primary;
+
+  .no-touch &:hover {
+    background-color: shade($color-primary, 50%);
+    color: $color-white;
+  }
+}
+
+.btn-secondary {
+  background-color: $color-secondary;
+
+  .no-touch &:hover {
+    background-color: tint($color-secondary, 50%);
+    color: $color-white;
+  }
+}
+
+.btn-third {
+  background-color: $color-third;
+
+  .no-touch &:hover {
+    background-color: tint($color-third, 50%);
+    color: $color-white;
+  }
+}
+
+.btn-fourth {
+  background-color: $color-fourth;
+
+  .no-touch &:hover {
+    background-color: tint($color-fourth, 50%);
+    color: $color-white;
+  }
+}
+
+.btn-fifth {
+  background-color: $color-fifth;
+
+  .no-touch &:hover {
+    background-color: tint($color-fifth, 50%);
+    color: $color-white;
+  }
+}
+
+.btn-ghost {
+  border-color: $color-primary;
+  color: $color-primary;
+  background-color: transparent;
+
+  .no-touch &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+    background-color: transparent;
+  }
+
+  &.color-white {
+    border-color: $color-white;
+    color: $color-white;
+
+    .no-touch &:hover {
+      background-color: $color-white;
+      color: $color-primary;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+	"private": true,
+	"devDependencies": {
+		"gulp-autoprefixer": "latest",
+		"gulp-concat": "latest",
+		"gulp-livereload": "latest",
+		"gulp-notify": "latest",
+		"gulp-plumber": "latest",
+		"gulp-rename": "latest",
+		"gulp-sass": "latest",
+		"gulp-uglify": "latest",
+		"gulp-penthouse": "latest",
+		"gulp": "latest"
+	}
+}
